@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Progress Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e21f5f464c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Multi Step Progress Bar</h1>
+        <div class="bar-container">
+            <div class="progress" id="progress"></div>
+            <span class="circle"> <i class="fas fa-sign-in-alt"></i></span>
+            <span class="circle"><i class="fas fa-id-card"></i> </span>
+            <span class="circle"><i class="fas fa-university"></i></span>
+            <span class="circle"><i class="fas fa-check-double"></i></span>
+        </div>
+        <div class="form-container">
+            <form action="#">
+                <div class="page">
+                    <div class="title">
+                        Login:
+                    </div>
+                    <div class="label">
+                        <label for="name">Username</label>
+                        <input type="text" id="name" placeholder="Username">
+                    </div>
+                    <div class="label">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="buttons">
+                        <button id="next" type="button">Next</button>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="title">
+                        Contact-Details:
+                    </div>
+
+                    <div class="label">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="E-Mail">
+                    </div>
+                    <div class="label">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" placeholder="Phone-Number">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev" type="button">Prev</button>
+                        <button id="next" type="button">Next</button>
+                    </div>
+
+                </div>
+                <div class="page">
+                    <div class="title">
+                        College-ID:
+                    </div>
+
+                    <div class="label">
+                        <label for="roll">Roll Number</label>
+                        <input type="text" id="roll" placeholder="Roll-Number">
+                    </div>
+                    <div class="label">
+                        <label for="branch">Branch</label>
+                        <select name="branch" id="branch">
+                            <option value="cse">CSE</option>
+                            <option value="">IT</option>
+                            <option value="">ECE</option>
+                            <option value="">EEE</option>
+                            <option value="">Mechanical</option>
+                            <option value="">Production</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev" type="button">Prev</button>
+                        <button id="next" type="button">Next</button>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="icon">
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev">Prev</button>
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="brain1.js"></script>
+</body>
+
+</html>
